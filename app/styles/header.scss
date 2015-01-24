@@ -1,0 +1,41 @@
+/* Import colors */
+@import "colors.scss";
+
+
+/*=========================================
+=            Header of RarDash            =
+=========================================*/
+
+header.header {
+  height: 55px;
+  background: $color-secondary-components;
+  padding-top: 15px;
+
+  .bt-rardash-default {
+    i {
+      color: $icons-header-buttons;
+    }
+  }
+
+  .simple-link {
+    text-align: right;
+    span {
+      color: $color-primary;
+      cursor: pointer;
+      position: relative;
+      padding: 10px 0;
+
+      i {
+        margin-left: 15px;
+      }
+
+      &:hover {
+        .dropdown-menu-rardash {
+          display: inherit;
+        }
+      }
+    }
+  }
+}
+
+/*-----  End of Header of RarDash  ------*/

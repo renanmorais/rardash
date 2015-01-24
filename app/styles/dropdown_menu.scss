@@ -1,0 +1,48 @@
+/* Import colors */
+@import "colors.scss";
+
+/*=====================================================
+=            Default dropdown menu RarDash            =
+=====================================================*/
+
+.dropdown-menu-rardash {
+  position: absolute;
+  background: $color-primary;
+  padding: 3px;
+  padding-top: 10px;
+  min-width: 200px;
+  border-radius: 4px;
+  height: auto;
+  margin-top: 25px;
+  display: none;
+  z-index: 2;
+
+  right: 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    li {
+      display: block;
+      margin-bottom: 10px;
+      a {
+        color: $color-secondary-components;
+        &:hover {
+          color: $color-on-secondary-components;
+          text-decoration: none;
+        }
+      }
+
+      i {
+        margin-right: 15px;
+        color: $color-secondary-components;
+      }
+    }
+  }
+}
+
+/*-----  End of Default dropdown menu RarDash  ------*/
+

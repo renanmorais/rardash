@@ -331,6 +331,13 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/ionicons/fonts/',
+            src: ['*'],
+            dest: '<%= config.dist %>/fonts'
         }]
       },
       styles: {
@@ -374,6 +381,14 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    uncss: {
+      dist: {
+        files: {
+          'dist/styles/vendor.css': ['dist/index.html'],
+        }
+      }
     }
   });
 
@@ -427,9 +442,10 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'modernizr',
-    'rev',
+    //'rev',
     'usemin',
-    'htmlmin'
+    'uncss'
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [

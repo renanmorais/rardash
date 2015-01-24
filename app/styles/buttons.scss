@@ -1,0 +1,21 @@
+/* Import colors */
+@import "colors.scss";
+
+/*=======================================
+=            Buttons RarDash            =
+=======================================*/
+
+.bt-rardash-default {
+  background: $color-on-secondary-components;
+  border-radius: 2px;
+  padding: 10px;
+
+  color: $color-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/*-----  End of Buttons RarDash  ------*/
+
