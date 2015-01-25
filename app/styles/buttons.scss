@@ -17,5 +17,27 @@
   }
 }
 
+.bt-rardash-action {
+  background: $color-action;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+
+  color: $color-on-secondary-components;
+
+  &:hover {
+    color: $color-on-secondary-components;
+  }
+
+  i {
+    color: $color-on-secondary-components;
+  }
+}
+
+.bt-rardash-danger {
+  @extend .bt-rardash-action;
+  background: $color-error;
+}
+
 /*-----  End of Buttons RarDash  ------*/
 

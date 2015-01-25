@@ -10,9 +10,14 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="bower_components/DataTables/media/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="bower_components/datatables-responsive/css/dataTables.responsive.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/checkbo/src/0.1.4/css/checkBo.min.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -86,6 +91,99 @@
                     </div>
                 </div>
             </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <table class="table-default" id="tableDefault" class="display" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th><input class="all" type="checkbox" id="allCheck"> All</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <form action="">
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" class="elementCheck" name="student"></td>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                </form>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row action-table">
+                    <div class="col-xs-12">
+                        <hr>
+                        <button type="submit" title="Delete all Students" class="bt-rardash-default bt-rardash-danger"><i class="ion-help-buoy"></i> Delete all Students</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
     <!-- END CONTENT -->
@@ -105,11 +203,19 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/DataTables/media/js/jquery.dataTables.js"></script>
+    <script src="bower_components/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="bower_components/datatables-responsive/js/dataTables.responsive.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
-
+    <script src="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="bower_components/checkbo/src/0.1.4/js/checkBo.min.js"></script>
+    <script src="scripts/vendor_config/datatable.js"></script>
+    <script src="scripts/vendor_config/checkbo.js"></script>
+    <script src="scripts/util/checkAll.js"></script>
+    <script src="scripts/modules/students.js"></script>
     <!-- endbuild -->
 </body>
 </html>
