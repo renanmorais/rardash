@@ -76,6 +76,10 @@ nav.left-menu {
           }
         }
       }
+
+      a.active {
+        color: $color-secondary-components;
+      }
     }
 
     li.power {

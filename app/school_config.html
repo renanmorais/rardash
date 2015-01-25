@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="bower_components/datatables-responsive/css/dataTables.responsive.css" />
     <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
     <!-- endbower -->
-    <link rel="stylesheet" href="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/checkbo/src/0.1.4/css/checkBo.min.css" />
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/checkbo/src/0.1.4/css/checkBo.min.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -63,8 +63,7 @@
         </div>
         <ul>
             <li>
-                <div class="menu-active"></div>
-                <a href="#" title="Start panel" class="active"><i class="ion-speedometer"></i></a>
+                <a href="index.html" title="Start panel"><i class="ion-speedometer"></i></a>
             </li>
             <li>
                 <a href="./users.html" title="Students"><i class="ion-ios-people"></i></a>
@@ -76,7 +75,8 @@
                 <a href="./materials_topcs.html" title="Materials"><i class="ion-ios-bookmarks"></i></a>
             </li>
             <li>
-                <a href="./school_config.html" title="School settings"><i class="ion-gear-b"></i></a>
+                <div class="menu-active"></div>
+                <a href="#" title="School settings" class="active"><i class="ion-gear-b"></i></a>
             </li>
         </ul>
     </nav>
@@ -90,7 +90,7 @@
                     <div class="breadcrumb-content">
                         <ul>
                             <li>
-                                <a href="#" title="List of students"><span class="active">Start panel</span></a>
+                                <a href="#" title="School settings"><span class="active">School settings</span></a>
                             </li>
                         </ul>
                     </div>
@@ -137,11 +137,11 @@
     <script src="bower_components/datatables-responsive/js/dataTables.responsive.js"></script>
     <script src="bower_components/sweetalert/lib/sweet-alert.js"></script>
     <!-- endbower -->
-    <script src="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-    <script src="bower_components/checkbo/src/0.1.4/js/checkBo.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="bower_components/checkbo/src/0.1.4/js/checkBo.min.js"></script>
     <script src="scripts/vendor_config/datatable.js"></script>
     <script src="scripts/vendor_config/checkbo.js"></script>
     <script src="scripts/util/checkAll.js"></script>

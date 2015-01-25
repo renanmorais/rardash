@@ -8,6 +8,7 @@
     "DataTables": "~1.10.4",
     "datatables-responsive": "https://github.com/DataTables/Responsive.git#~1.0.3",
     "Plugins": "https://github.com/DataTables/Plugins.git#~1.0.1",
-    "checkbo": "https://github.com/elmahdim/checkbo.git"
+    "checkbo": "https://github.com/elmahdim/checkbo.git",
+    "sweetalert": "~0.4.1"
   }
 }

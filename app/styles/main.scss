@@ -22,6 +22,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "dropdown_menu.scss";
 @import "breadcrumb_cotent.scss";
 @import "datatable.scss";
+@import "geral_boxes_content.scss";
+@import "forms.scss";
 
 /*-----  End of Import components  ------*/
 
@@ -34,4 +36,8 @@ body {
   color: $color-primary;
 
   margin-left: 60px;
+}
+
+.radio label, .checkbox label {
+  padding-left: 0;
 }

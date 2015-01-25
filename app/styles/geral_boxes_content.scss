@@ -1,0 +1,18 @@
+/* Import colors */
+@import "colors.scss";
+
+/*=====================================================
+=            General boxes for the content            =
+=====================================================*/
+
+.general-box-content {
+  background: $color-on-secondary-components;
+  border-radius: 4px;
+  float: left;
+  padding: 30px 20px;
+  width: 100%;
+  text-align: left;
+}
+
+/*-----  End of General boxes for the content  ------*/
+

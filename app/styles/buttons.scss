@@ -5,7 +5,7 @@
 =            Buttons RarDash            =
 =======================================*/
 
-.bt-rardash-default {
+.bt-rardash-default, button:disabled {
   background: $color-on-secondary-components;
   border-radius: 2px;
   padding: 10px;
@@ -16,6 +16,15 @@
     text-decoration: none;
   }
 }
+
+button:disabled {
+  background: $color-on-secondary-components;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+  color: $color-primary;
+}
+
 
 .bt-rardash-action {
   background: $color-action;
@@ -37,6 +46,15 @@
 .bt-rardash-danger {
   @extend .bt-rardash-action;
   background: $color-error;
+}
+
+
+.bt-rardash-circle {
+  border-radius: 50%;
+  font-size: 2.5em;
+  width: 77px;
+  float: left;
+  text-align: center;
 }
 
 /*-----  End of Buttons RarDash  ------*/

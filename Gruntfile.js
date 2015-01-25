@@ -338,6 +338,13 @@ module.exports = function (grunt) {
             cwd: 'bower_components/ionicons/fonts/',
             src: ['*'],
             dest: '<%= config.dist %>/fonts'
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/DataTables/media/images',
+            src: ['*'],
+            dest: '<%= config.dist %>/images'
         }]
       },
       styles: {
@@ -444,7 +451,7 @@ module.exports = function (grunt) {
     'modernizr',
     //'rev',
     'usemin',
-    'uncss'
+    //'uncss'
     //'htmlmin'
   ]);
 

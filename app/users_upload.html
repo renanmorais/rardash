@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="bower_components/datatables-responsive/css/dataTables.responsive.css" />
     <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
     <!-- endbower -->
-    <link rel="stylesheet" href="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/checkbo/src/0.1.4/css/checkBo.min.css" />
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/checkbo/src/0.1.4/css/checkBo.min.css" />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -63,11 +63,11 @@
         </div>
         <ul>
             <li>
-                <div class="menu-active"></div>
-                <a href="#" title="Start panel" class="active"><i class="ion-speedometer"></i></a>
+                <a href="./index.html" title="Start panel"><i class="ion-speedometer"></i></a>
             </li>
             <li>
-                <a href="./users.html" title="Students"><i class="ion-ios-people"></i></a>
+                <div class="menu-active"></div>
+                <a href="#" title="Students" class="active"><i class="ion-ios-people"></i></a>
             </li>
             <li class="power">
                 <a href="#" title="logout"><i class="ion-log-out"></i></a>
@@ -90,7 +90,13 @@
                     <div class="breadcrumb-content">
                         <ul>
                             <li>
-                                <a href="#" title="List of students"><span class="active">Start panel</span></a>
+                                <a href="./users.html" title="List of students"><span>List of students</span></a>
+                            </li>
+                            <li>
+                                <a href="./users_new.html" title="New student"><span>New student</span></a>
+                            </li>
+                            <li>
+                                <a href="#" title="New upload"><span class="active">New upload</span></a>
                             </li>
                         </ul>
                     </div>
@@ -105,14 +111,48 @@
                     </select>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="alert alert-warning alert-dismissible" role="alert">
-                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <strong><i class="ion-alert-circled"></i> Hey!</strong> This section is in progress...
+            <form action="">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <article class="general-box-content">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="#" title="Download of the model" target="_blank" class="bt-rardash-action bt-rardash-circle"><i class="ion-android-download"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <header>
+                                        <h3>
+                                            Mass mailing - Download of the model
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aperiam corporis error, nobis aut quisquam similique vitae minus.
+                                        </p>
+                                    </header>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <article>
+                            <header>
+                                <h3>
+                                    Select your archive and click in send file
+                                </h3>
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputFile">File input</label>
+                                    <input type="file" id="inputFile">
+                                    <p class="help-block">Max size for the archive: 10mb - Test validate (.js and .any)</p>
+                                  </div>
+                                  <button id="buttonUpload" type="submit" disabled="disabled" title="Send file"><i class="ion-android-upload"></i> Send file</button>
+                                </form>
+                            </header>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- END CONTENT -->
@@ -137,11 +177,11 @@
     <script src="bower_components/datatables-responsive/js/dataTables.responsive.js"></script>
     <script src="bower_components/sweetalert/lib/sweet-alert.js"></script>
     <!-- endbower -->
-    <script src="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
-    <script src="bower_components/checkbo/src/0.1.4/js/checkBo.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="bower_components/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="bower_components/checkbo/src/0.1.4/js/checkBo.min.js"></script>
     <script src="scripts/vendor_config/datatable.js"></script>
     <script src="scripts/vendor_config/checkbo.js"></script>
     <script src="scripts/util/checkAll.js"></script>
