@@ -6,6 +6,10 @@
 /*jshint unused:false*/
 var checkElements = {};
 
+/**
+ * Check all elements
+ * @param  {event} event Event click
+ */
 checkElements.checkAll = function (event){
   if(event.target.checked){
     var getElements = document.querySelectorAll('.elementCheck');
@@ -33,11 +37,16 @@ checkElements.checkAll = function (event){
 
 };
 
+/**
+ * Check one or more elements
+ * @param  {event} event Event click
+ */
 checkElements.checkOneOrMore = function(){
   var getElements = document.querySelectorAll('.elementCheck');
   var countElements = getElements.length;
 
   while(countElements--){
+
     if(getElements[countElements].checked){
       var enableButtonDeleteElements = document.getElementById('deleteSelectedUsers');
       enableButtonDeleteElements.disabled = false;
@@ -50,5 +59,6 @@ checkElements.checkOneOrMore = function(){
         disableButtonDeleteElements.classList.remove('bt-rardash-danger');
       }
     }
+
   }
 };

@@ -9,6 +9,9 @@ var datatable = {};
 
 datatable.generateTable = function(_element, _type, _urlTranslateTable, _data){
 
+  /**
+   * Default Table
+   */
   jQuery(_element).dataTable({
     pageLength: 6,
     responsive: true,
